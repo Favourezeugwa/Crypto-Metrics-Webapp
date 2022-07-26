@@ -1,0 +1,21 @@
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ec4c8b;
+  font-size: 20px;
+  background-color: #ec4c8b;
+  color: white;
+}
+
+.icons-class {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.lessthan {
+  font-size: 15px;
+}
