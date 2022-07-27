@@ -9,21 +9,25 @@ export const fetchCoins = createAsyncThunk(
 
     const data = await response.json();
 
-    const coinData = data.map((coin) => ({
+    const coinData = data.coins.map((coin) => ({
       id: coin.id,
+      img: coin.icon,
       name: coin.name,
-      symbol: coin.symbol,
       price: coin.price,
-      marketCap: coin.market_cap,
-      volume: coin.volume,
-      circulatingSupply: coin.circulating_supply,
-      totalSupply: coin.total_supply,
-      maxSupply: coin.max_supply,
-      change1h: coin.change_1h,
-      change24h: coin.change_24h,
-      change7d: coin.change_7d,
       rank: coin.rank,
-      img: coin.img,
+      symbol: coin.symbol,
+      marketCap: coin.marketCap,
+      availableSupply: coin.availableSupply,
+      contractAddress: coin.contractAddress,
+      decimals: coin.decimals,
+      priceBtc: coin.priceBtc,
+      priceChange1d: coin.priceChange1d,
+      priceChange1h: coin.priceChange1h,
+      priceChange1w: coin.priceChange1w,
+      totalSupply: coin.totalSupply,
+      twitterUrl: coin.twitterUrl,
+      volume: coin.volume,
+      websiteUrl: coin.websiteUrl,
     }));
 
     return coinData;

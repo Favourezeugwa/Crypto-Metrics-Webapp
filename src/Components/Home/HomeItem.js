@@ -4,26 +4,40 @@ import PropTypes from 'prop-types';
 const HomeItem = (props) => {
   const { crypto } = props;
   const {
-    name, symbol, price, change, changeColor,
+    id, name, symbol, price, img, rank,
   } = crypto;
 
   return (
     <li>
-      <h3>{name}</h3>
-      <p>{symbol}</p>
-      <p>{price}</p>
-      <p style={{ color: changeColor }}>{change}</p>
+      <div
+        className="home-item"
+        id={id}
+      >
+        <div className="home-item-img">
+          <img src={img} alt={name} />
+        </div>
+        <div className="home-item-info">
+          <p>
+            #
+            {rank}
+          </p>
+          <h3>{name}</h3>
+          <p>{symbol}</p>
+          <p>{price}</p>
+        </div>
+      </div>
     </li>
   );
 };
 
 HomeItem.propTypes = {
   crypto: PropTypes.shape({
+    id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     symbol: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
-    change: PropTypes.string.isRequired,
-    changeColor: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    rank: PropTypes.string.isRequired,
   }).isRequired,
 };
 

@@ -1,39 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Container } from 'react-bootstrap';
+import { fetchCoins } from '../../Redux/Crypto/CryptoSlice';
 import HomeList from './HomeList';
 import './Home.css';
 
 const HomeContainer = () => {
-  const [cryptos] = useState([
-    {
-      name: 'Bitcoin',
-      symbol: 'BTC',
-      price: '$9,890.00',
-      change: '+0.00%',
-      changeColor: '#00ff00',
-    },
-    {
-      name: 'Ethereum',
-      symbol: 'ETH',
-      price: '$9,890.00',
-      change: '+0.00%',
-      changeColor: '#00ff00',
-    },
-    {
-      name: 'Litecoin',
-      symbol: 'LTC',
-      price: '$9,890.00',
-      change: '+0.00%',
-      changeColor: '#00ff00',
-    },
-    {
-      name: 'Bitcoin Cash',
-      symbol: 'BCH',
-      price: '$9,890.00',
-      change: '+0.00%',
-      changeColor: '#00ff00',
-    },
-  ]);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCoins());
+  }, []);
+
+  // declare a global state variable to store the data from the API
+  const cryptos = useSelector((state) => state.crypto);
+  console.log(cryptos);
 
   return (
     <Container>
