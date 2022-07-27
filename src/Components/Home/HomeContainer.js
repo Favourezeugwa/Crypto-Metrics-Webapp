@@ -14,7 +14,6 @@ const HomeContainer = () => {
 
   // declare a global state variable to store the data from the API
   const cryptos = useSelector((state) => state.crypto);
-  console.log(cryptos);
 
   return (
     <Container>
