@@ -1,22 +1,7 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import HomeItem from './HomeItem';
-import { fetchCoins } from '../../Redux/Crypto/CryptoSlice';
+import React from 'react';
 
-const HomeList = () => {
-  const cryptos = useSelector((state) => state.crypto);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCoins());
-  }, []);
-
-  return (
-    <ul>
-      { cryptos.map((crypto) => <HomeItem key={crypto.id} crypto={crypto} />)}
-    </ul>
-  );
-};
+const HomeList = () => (
+  <div>HomeList</div>
+);
 
 export default HomeList;

@@ -1,50 +1,54 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import { FaArrowRight } from 'react-icons/fa';
-import { setCoinsReducer } from '../../Redux/Crypto/CryptoSlice';
+import { fetchCoins, setCoinsReducer } from '../../Redux/Crypto/CryptoSlice';
 
-const HomeItem = (props) => {
-  const { crypto } = props;
-
-  const {
-    id, name, symbol, price, img, rank,
-  } = crypto;
+const HomeItem = () => {
+  const cryptos = useSelector((state) => state.crypto);
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(fetchCoins());
+  }, [dispatch, fetchCoins]);
+
   const handleClick = ({ target }) => {
     const { id } = target;
+    console.log(id);
     dispatch(setCoinsReducer(id));
   };
 
   return (
-    <li className="listItem">
-      <Link
-        to="/details"
-        onClick={handleClick}
-      >
-        <div
-          className="homeItem"
-          id={id}
-        >
-          <div className="home-item-img">
-            <img src={img} alt={name} id={id} />
-          </div>
-          <div className="home-item-info">
-            <p>
-              #
-              {rank}
-            </p>
-            <h3 className="name">{name}</h3>
-            <p className="symbol">{symbol}</p>
-            <p>{price}</p>
-          </div>
-          <FaArrowRight className="fontIcon" />
-        </div>
-      </Link>
-    </li>
+    <ul className="listItem">
+      {cryptos.map((crypto) => (
+        <Link to="/details" key={crypto.id}>
+          <li
+            className="homeItem"
+            onClick={handleClick}
+          >
+            <div className="home-item-img">
+              <img src={crypto.img} alt={crypto.name} id={crypto.id} />
+            </div>
+            <div className="home-item-info">
+              <p>
+                #
+                {crypto.rank}
+              </p>
+              <h3 className="name">{crypto.name}</h3>
+              <p className="symbol">{crypto.symbol}</p>
+              <p>{crypto.price}</p>
+            </div>
+            <FaArrowRight className="fontIcon" />
+
+          </li>
+        </Link>
+      ))}
+      ;
+    </ul>
   );
 };
 
