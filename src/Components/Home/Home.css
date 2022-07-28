@@ -9,14 +9,32 @@ ul {
   text-align: center;
 }
 
-li {
-  list-style-type: none;
+.listItem {
   border: 1px solid #504563;
   border-radius: 10px;
+  list-style-type: none;
+  background-color: #190738;
 }
 
-a {
-  color: #bdb0d3;
+.listItem:hover {
+  background-color: #110625;
+  transform: scale(1.01);
+}
+
+a,
+.fontIcon {
+  color: rgb(177, 205, 50);
+}
+
+a:hover,
+.fontIcon:hover {
+  color: yellow;
+}
+
+.homeItem {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
 }
 
 img {

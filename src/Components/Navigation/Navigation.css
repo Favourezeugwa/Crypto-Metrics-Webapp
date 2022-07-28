@@ -4,10 +4,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  border-bottom: 1px solid #ec4c8b;
   font-size: 20px;
-  background-color: #ec4c8b;
-  color: white;
+  background-color: #110247;
+  color: #fff;
+}
+
+.headerList {
+  list-style: none;
 }
 
 .icons-class {

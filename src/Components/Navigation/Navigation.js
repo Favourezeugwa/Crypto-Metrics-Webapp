@@ -22,10 +22,10 @@ const Navigation = () => {
               Home
             </Link>
           </li>
-          <li>
+          <li className="headerList">
             <p>most views</p>
           </li>
-          <li>
+          <li className="headerList">
             <div className="icons-class">
               <FaMicrophone style={iconStyle} />
               <FiSettings style={iconStyle} />

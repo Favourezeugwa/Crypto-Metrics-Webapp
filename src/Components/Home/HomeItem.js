@@ -20,7 +20,7 @@ const HomeItem = (props) => {
   };
 
   return (
-    <li>
+    <li className="listItem">
       <Link
         to="/details"
         onClick={handleClick}
@@ -29,7 +29,6 @@ const HomeItem = (props) => {
           className="homeItem"
           id={id}
         >
-          <FaArrowRight />
           <div className="home-item-img">
             <img src={img} alt={name} id={id} />
           </div>
@@ -38,10 +37,11 @@ const HomeItem = (props) => {
               #
               {rank}
             </p>
-            <h3>{name}</h3>
-            <p>{symbol}</p>
+            <h3 className="name">{name}</h3>
+            <p className="symbol">{symbol}</p>
             <p>{price}</p>
           </div>
+          <FaArrowRight className="fontIcon" />
         </div>
       </Link>
     </li>
