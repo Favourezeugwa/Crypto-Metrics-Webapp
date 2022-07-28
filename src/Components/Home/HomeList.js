@@ -10,7 +10,7 @@ const HomeList = () => {
 
   useEffect(() => {
     dispatch(fetchCoins());
-  }, []);
+  }, [dispatch, fetchCoins]);
 
   return (
     <ul>
