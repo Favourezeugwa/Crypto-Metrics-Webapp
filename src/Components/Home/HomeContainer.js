@@ -1,25 +1,14 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Container } from 'react-bootstrap';
-import { fetchCoins } from '../../Redux/Crypto/CryptoSlice';
+import React from 'react';
+// import { div } from 'react-bootstrap';
 import HomeList from './HomeList';
 import './Home.css';
 
-const HomeContainer = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCoins());
-  }, []);
-
-  // declare a global state variable to store the data from the API
-  const cryptos = useSelector((state) => state.crypto);
-
+function HomeContainer() {
   return (
-    <Container>
-      <HomeList cryptos={cryptos} />
-    </Container>
+    <div className="home">
+      <HomeList />
+    </div>
   );
-};
+}
 
 export default HomeContainer;

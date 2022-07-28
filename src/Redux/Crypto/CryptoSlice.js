@@ -28,6 +28,7 @@ export const fetchCoins = createAsyncThunk(
       twitterUrl: coin.twitterUrl,
       volume: coin.volume,
       websiteUrl: coin.websiteUrl,
+      show: false,
     }));
 
     return coinData;
@@ -41,11 +42,8 @@ export const cryptoSlice = createSlice({
   initialState,
   reducers: {
     setCoinsReducer: (state, action) => state.map((coin) => {
-      if (coin.id === action.payload.id) {
-        return {
-          ...coin,
-          ...action.payload,
-        };
+      if (coin.id === action.payload) {
+        return { ...coin, show: !coin.show };
       }
       return coin;
     }),

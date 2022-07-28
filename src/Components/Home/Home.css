@@ -1,11 +1,25 @@
+.home {
+  background-color: #190738;
+}
+
 ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
   text-align: center;
 }
 
 li {
   list-style-type: none;
-  border: 2px solid #ec4c8b;
+  border: 1px solid #504563;
+  border-radius: 10px;
+}
+
+a {
+  color: #bdb0d3;
+}
+
+img {
+  width: 70px;
+  height: 70px;
 }
