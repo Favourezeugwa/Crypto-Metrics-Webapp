@@ -29,12 +29,16 @@
 }
 
 .infoLink {
+  list-style: none;
   background-color: #190738;
   padding: 20px;
+}
+
+.infoLink:nth-child(even) {
+  background-color: #170630;
 }
 
 .coin-info {
   display: flex;
   justify-content: space-between;
 }
-

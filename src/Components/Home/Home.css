@@ -1,8 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .home {
   background-color: #190738;
 }
 
-ul {
+.homeList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
@@ -36,7 +42,7 @@ a:hover,
 .homeItem {
   display: flex;
   justify-content: space-around;
-  padding: 40px;
+  padding: 40px 30px;
 }
 
 img {
@@ -45,7 +51,7 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-  ul {
+  .homeList {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -53,7 +59,7 @@ img {
   .homeItem {
     display: flex;
     justify-content: space-around;
-    padding: 30px 5px;
+    padding: 30px 2px;
     font-size: 11px;
   }
 
@@ -62,7 +68,7 @@ img {
     height: 50px;
   }
 
-  .listItem:nth-child(odd) {
-    background-color: #170630;
+  .listItem:nth-child(3n + 1) {
+    background-color: #190738;
   }
 }

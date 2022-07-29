@@ -61,6 +61,7 @@ function DetailsContainer() {
              <p key={crypto.id} className="info">
                Market Cap:
                {' '}
+               $
                {crypto.marketCap}
              </p>
              <p key={crypto.id} className="info">
@@ -87,30 +88,35 @@ function DetailsContainer() {
              <p key={crypto.id} className="info">
                Price Change/1 Day Ago:
                {' '}
+               $
                {crypto.priceChange1d}
              </p>
              <p key={crypto.id} className="info">
                Price Change/Hour:
                {' '}
+               $
                {crypto.priceChange1h}
              </p>
              <p key={crypto.id} className="info">
                Price Change/Week:
                {' '}
+               $
                {crypto.priceChange1w}
              </p>
              <p key={crypto.id} className="info">
                Total Supply:
                {' '}
+               $
                {crypto.totalSupply}
              </p>
              <p key={crypto.id} className="info">
                Volume:
                {' '}
+               $
                {crypto.volume}
              </p>
-             <a href={crypto.twitterUrl} key={crypto.id} className="infoLink">Twitter</a>
-             <a href={crypto.websiteUrl} key={crypto.id} className="infoLink">Our website URL</a>
+             <li className="infoLink"><a href={crypto.twitterUrl} key={crypto.id}>Our Twitter Handle</a></li>
+             <li className="infoLink"><a href={crypto.websiteUrl} key={crypto.id}>Our website URL</a></li>
            </>
          ))
         }

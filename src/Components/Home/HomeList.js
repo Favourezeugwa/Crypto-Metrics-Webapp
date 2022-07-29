@@ -26,7 +26,7 @@ const HomeList = () => {
   return (
     <>
       <Search query={query} onSearch={onSearch} />
-      <ul>
+      <ul className="homeList">
         { filteredCrypto.map((crypto) => <HomeItem key={crypto.id} crypto={crypto} />)}
       </ul>
     </>
