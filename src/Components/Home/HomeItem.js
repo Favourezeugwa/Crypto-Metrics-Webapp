@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -21,29 +23,32 @@ const HomeItem = (props) => {
 
   return (
     <li className="listItem">
-      <Link
-        to="/details"
-        onClick={handleClick}
+      <div
+        className="homeItem"
+        id={id}
       >
-        <div
-          className="homeItem"
-          id={id}
-        >
-          <div className="home-item-img">
-            <img src={img} alt={name} id={id} />
-          </div>
-          <div className="home-item-info">
-            <p>
-              #
-              {rank}
-            </p>
-            <h3 className="name">{name}</h3>
-            <p className="symbol">{symbol}</p>
-            <p>{price}</p>
-          </div>
-          <FaArrowRight className="fontIcon" />
+        <div className="home-item-img">
+          <Link
+            to="/details"
+          >
+            <img src={img} alt={name} id={id} onClick={handleClick} />
+          </Link>
         </div>
-      </Link>
+        <div className="home-item-info">
+          <p>
+            #
+            {rank}
+          </p>
+          <h3 className="name">{name}</h3>
+          <p className="symbol">{symbol}</p>
+          <p>{price}</p>
+        </div>
+        <Link
+          to="/details"
+        >
+          <FaArrowRight className="fontIcon" id={id} onClick={handleClick} />
+        </Link>
+      </div>
     </li>
   );
 };

@@ -1,0 +1,11 @@
+.searchContainer {
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 40%;
+  padding: 10px;
+}

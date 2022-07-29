@@ -1,0 +1,39 @@
+.detailsContainer {
+  color: yellow;
+  background-color: #190738;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.indiImg {
+  width: 120px;
+  height: 120px;
+}
+
+.detailTitle {
+  background-color: #170630;
+  padding: 7px 20px;
+}
+
+.info {
+  border-bottom: 1px solid #170630;
+  padding: 20px;
+}
+
+/* .info:nth-child(even) {
+  background-color: #170630;
+} */
+
+.infoLink {
+  background-color: #190738;
+  padding: 20px;
+}
+
+.coin-info {
+  display: flex;
+  justify-content: space-between;
+}

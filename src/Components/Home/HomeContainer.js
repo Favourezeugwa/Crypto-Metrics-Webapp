@@ -1,5 +1,4 @@
 import React from 'react';
-// import { div } from 'react-bootstrap';
 import HomeList from './HomeList';
 import './Home.css';
 
