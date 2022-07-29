@@ -11,11 +11,11 @@
 ![](./src/Assets/MobileHome.snip.PNG)
 ![](./src/Assets/MobileDetails2.snip.PNG)
 
-## Live Demo
+### Live Demo
 
-[link to live demo on Netlify](https://crypto-metrics-webapp.netlify.app/)
+[link to live demo on Netlify](https://fave-crypto-metrics.netlify.app/)
 
-## Loom Recording
+### Loom Recording
 
 [Link to Loom Recording](https://www.loom.com/share/7e3b94d7fac54013ba4fa381305aff38)
 
