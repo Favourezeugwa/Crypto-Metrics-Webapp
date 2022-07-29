@@ -7,7 +7,6 @@ function DetailsContainer() {
   const cryptos = useSelector((state) => state.crypto);
 
   const filteredCrypto = cryptos.filter((crypto) => crypto.show === true);
-  console.log(filteredCrypto);
 
   return (
     <Container>

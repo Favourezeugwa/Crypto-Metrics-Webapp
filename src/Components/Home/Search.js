@@ -19,7 +19,7 @@ function Search(props) {
 
 Search.propTypes = {
   query: PropTypes.string.isRequired,
-  onSearch: PropTypes.string.isRequired,
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default Search;
