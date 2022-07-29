@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test HomeContainer renders correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="searchContainer"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="search coin"
+      type="text"
+      value=""
+    />
+  </div>
+  <ul
+    className="homeList"
+  />
+</div>
+`;

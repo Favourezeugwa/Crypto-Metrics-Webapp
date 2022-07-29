@@ -1,0 +1,40 @@
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 20px;
+  background-color: #170630;
+  color: rgb(212, 209, 209);
+  width: 100%;
+}
+
+.headerList {
+  list-style: none;
+}
+
+.icons-class {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.lessthan {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navLinks {
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+
+  .icons-class {
+    width: 60px;
+  }
+
+  .lessthan {
+    font-size: 12px;
+  }
+}
