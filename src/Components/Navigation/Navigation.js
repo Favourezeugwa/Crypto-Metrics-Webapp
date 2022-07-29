@@ -7,7 +7,7 @@ import './Navigation.css';
 
 const Navigation = () => {
   const iconStyle = {
-    color: '#fff',
+    color: 'rgb(212, 209, 209)',
     cursor: 'pointer',
     textDecoration: 'none',
   };
@@ -23,7 +23,7 @@ const Navigation = () => {
             </Link>
           </li>
           <li className="headerList">
-            <p>most views</p>
+            <h1>Crypto Metrics</h1>
           </li>
           <li className="headerList">
             <div className="icons-class">

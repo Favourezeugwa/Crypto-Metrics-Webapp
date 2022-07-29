@@ -13,3 +13,14 @@ input {
   background-color: #11062598;
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  .searchContainer {
+    margin: 10px;
+  }
+
+  input {
+    width: 90%;
+    padding: 10px;
+  }
+}
