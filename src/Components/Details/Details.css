@@ -16,12 +16,14 @@
 
 .detailTitle {
   background-color: #170630;
-  padding: 7px 20px;
+  padding: 7px 30px;
 }
 
 .info {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #170630;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .info:nth-child(even) {
@@ -29,9 +31,11 @@
 }
 
 .infoLink {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   background-color: #190738;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .infoLink:nth-child(even) {
@@ -51,12 +55,12 @@
 
   .info,
   .infoLink {
-    padding: 10px;
+    padding: 15px;
     font-size: 13px;
   }
 
   .detailTitle {
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 20px;
   }
 

@@ -68,7 +68,8 @@ img {
     height: 50px;
   }
 
-  .listItem:nth-child(3n + 1) {
-    background-color: #190738;
+  .listItem,
+  .fontIcon {
+    color: yellow;
   }
 }

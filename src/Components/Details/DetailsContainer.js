@@ -35,87 +35,94 @@ function DetailsContainer() {
                {' '}
                {crypto.name}
              </h2>
-             <p key={crypto.id} className="info">
-               Coin Name:
-               {' '}
-               {crypto.name}
-             </p>
-             <p key={crypto.id} className="info">
-               Ranking:
-               {' '}
-               No.
-               {crypto.rank}
-             </p>
-             <p key={crypto.id} className="info">
-               Current Price:
-               {' '}
-               $
-               {crypto.price}
-             </p>
-             <p key={crypto.id} className="info">
-               Symbol:
-               {' '}
-               {crypto.symbol}
-             </p>
-             <p key={crypto.id} className="info">
-               Market Cap:
-               {' '}
-               $
-               {crypto.marketCap}
-             </p>
-             <p key={crypto.id} className="info">
-               Available Supply:
-               {' '}
-               {crypto.availableSupply}
-             </p>
-             <p key={crypto.id} className="info">
-               Contract Address:
-               {' '}
-               {crypto.contractAddress}
-             </p>
-             <p key={crypto.id} className="info">
-               Decimals:
-               {' '}
-               {crypto.decimals}
-             </p>
-             <p key={crypto.id} className="info">
-               Price Btc:
-               {' '}
-               $
-               {crypto.priceBtc}
-             </p>
-             <p key={crypto.id} className="info">
-               Price Change/1 Day Ago:
-               {' '}
-               $
-               {crypto.priceChange1d}
-             </p>
-             <p key={crypto.id} className="info">
-               Price Change/Hour:
-               {' '}
-               $
-               {crypto.priceChange1h}
-             </p>
-             <p key={crypto.id} className="info">
-               Price Change/Week:
-               {' '}
-               $
-               {crypto.priceChange1w}
-             </p>
-             <p key={crypto.id} className="info">
-               Total Supply:
-               {' '}
-               $
-               {crypto.totalSupply}
-             </p>
-             <p key={crypto.id} className="info">
-               Volume:
-               {' '}
-               $
-               {crypto.volume}
-             </p>
-             <li className="infoLink"><a href={crypto.twitterUrl} key={crypto.id}>Our Twitter Handle</a></li>
-             <li className="infoLink"><a href={crypto.websiteUrl} key={crypto.id}>Our website URL</a></li>
+             <div className="info">
+               <p>Coin Name</p>
+               <p key={crypto.id}>{crypto.name}</p>
+             </div>
+             <div className="info">
+               <p>Ranking</p>
+               <p key={crypto.id}>
+                 No.
+                 {crypto.rank}
+               </p>
+             </div>
+             <div className="info">
+               <p>Current Price</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.price}
+               </p>
+             </div>
+             <div className="info">
+               <p>Symbol</p>
+               <p key={crypto.id}>{crypto.symbol}</p>
+             </div>
+             <div className="info">
+               <p>Market Cap</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.marketCap}
+               </p>
+             </div>
+             <div className="info">
+               <p>Available Supply</p>
+               <p key={crypto.id}>{crypto.availableSupply}</p>
+             </div>
+             <div className="info">
+               <p>Contract Address</p>
+               <p key={crypto.id}>{crypto.contractAddress}</p>
+             </div>
+             <div className="info">
+               <p>Decimals</p>
+               <p key={crypto.id}>{crypto.decimals}</p>
+             </div>
+             <div className="info">
+               <p>Price Btc</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.priceBtc}
+               </p>
+             </div>
+             <div className="info">
+               <p>Price Change/1 Day Ago</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.priceChange1d}
+               </p>
+             </div>
+             <div className="info">
+               <p>Price Change/Hour</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.priceChange1h}
+               </p>
+             </div>
+             <div className="info">
+               <p>Price Change/Week</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.priceChange1w}
+               </p>
+             </div>
+             <div className="info">
+               <p>Total Supply</p>
+               <p key={crypto.id}>
+                 $
+                 {crypto.totalSupply}
+               </p>
+             </div>
+             <div className="info">
+               <p>Volume</p>
+               <p key={crypto.id}>{crypto.volume}</p>
+             </div>
+             <div className="infoLink">
+               <p>Twitter</p>
+               <li><a href={crypto.twitterUrl} key={crypto.id}>Our Twitter Handle</a></li>
+             </div>
+             <div className="infoLink">
+               <p>Website</p>
+               <li><a href={crypto.websiteUrl} key={crypto.id}>Our website URL</a></li>
+             </div>
            </>
          ))
         }

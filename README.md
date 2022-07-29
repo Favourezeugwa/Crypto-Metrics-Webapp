@@ -8,11 +8,15 @@
 
 ### Screenshots
 
+![](./src/Assets/MobileHome.snip.PNG)
+![](./src/Assets/MobileDetails2.snip.PNG)
+
 ## Live Demo
 
-[link to live demo on Netlify]
+[link to live demo on Netlify](https://crypto-metrics-webapp.netlify.app/)
 
 ## Loom Recording
+
 [Link to Loom Recording](https://www.loom.com/share/7e3b94d7fac54013ba4fa381305aff38)
 
 ## Built With
@@ -66,7 +70,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Inspiration(Microverse Math magicians Wireframe)
+- Inspiration [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 - Microverse student community
 
 ## 📝 License
