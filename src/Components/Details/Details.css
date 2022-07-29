@@ -42,3 +42,25 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+  .indiImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info,
+  .infoLink {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .detailTitle {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+
+  .imageContainer {
+    padding: 30px;
+  }
+}
