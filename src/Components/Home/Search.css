@@ -1,11 +1,15 @@
 .searchContainer {
   align-items: center;
+  text-align: center;
+  margin: 20px;
 }
 
 input {
   border: none;
   border-radius: 20px;
   outline: none;
-  width: 40%;
-  padding: 10px;
+  width: 50%;
+  padding: 12px;
+  background-color: #11062598;
+  color: #fff;
 }

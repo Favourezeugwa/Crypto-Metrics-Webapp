@@ -24,9 +24,9 @@
   padding: 20px;
 }
 
-/* .info:nth-child(even) {
+.info:nth-child(even) {
   background-color: #170630;
-} */
+}
 
 .infoLink {
   background-color: #190738;

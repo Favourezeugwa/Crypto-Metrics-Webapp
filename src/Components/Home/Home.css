@@ -10,10 +10,10 @@ ul {
 }
 
 .listItem {
-  border: 1px solid #504563;
+  border: 1px solid #3d3250;
   border-radius: 10px;
   list-style-type: none;
-  background-color: #190738;
+  background-color: #150530;
   color: rgb(177, 205, 50);
 }
 
