@@ -41,7 +41,10 @@ const HomeItem = (props) => {
           </p>
           <h3 className="name">{name}</h3>
           <p className="symbol">{symbol}</p>
-          <p>{price}</p>
+          <p>
+            $
+            {price}
+          </p>
         </div>
         <Link
           to="/details"

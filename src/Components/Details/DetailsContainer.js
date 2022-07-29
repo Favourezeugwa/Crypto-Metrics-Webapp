@@ -50,6 +50,7 @@ function DetailsContainer() {
              <p key={crypto.id} className="info">
                Current Price:
                {' '}
+               $
                {crypto.price}
              </p>
              <p key={crypto.id} className="info">
@@ -80,20 +81,21 @@ function DetailsContainer() {
              <p key={crypto.id} className="info">
                Price Btc:
                {' '}
+               $
                {crypto.priceBtc}
              </p>
              <p key={crypto.id} className="info">
-               Price Change 1 day Ago:
+               Price Change/1 Day Ago:
                {' '}
                {crypto.priceChange1d}
              </p>
              <p key={crypto.id} className="info">
-               Price change 1 hour Ago:
+               Price Change/Hour:
                {' '}
                {crypto.priceChange1h}
              </p>
              <p key={crypto.id} className="info">
-               Price Change 1 week ago:
+               Price Change/Week:
                {' '}
                {crypto.priceChange1w}
              </p>
