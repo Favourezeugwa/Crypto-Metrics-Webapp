@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math-Magicians
+# Crypto-Metrics-Webapp
 
-> Crypto-Metrics-Webapp: This is a mobile web application used to check a list of crypto metrics. It is created using an API that provides. The webapp have several pages which includes the "Home page" with a list of items that could be filtered by some parameters; in the example below, it's a list of metrics that can be filtered by the country and "Details" with more information about a selected coin.
+> Crypto-Metrics-Webapp: This is a mobile web application used to check a list of crypto metrics. It is created using the coinstats API. The webapp have several pages which includes the "Home page" with a list of items that could be filtered by some parameters; in the project, it's a list of metrics that can be filtered by the coin name and a "Details page" with more information about a selected coin.
 
 ## Overview
 
@@ -12,13 +12,15 @@
 
 [link to live demo on Netlify]
 
+## Loom Recording
+[Link to Loom Recording](https://www.loom.com/share/7e3b94d7fac54013ba4fa381305aff38)
+
 ## Built With
 
 - Create React App (CRA)
 - React Router
 - Gitflow
 - Redux toolkit
-- React-Bootstrap
 - Jest test and snapshots
 - Coinstats API
 - React Hooks
