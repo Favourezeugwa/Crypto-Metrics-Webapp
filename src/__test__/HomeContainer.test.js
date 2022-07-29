@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import HomeContainer from '../Components/Home/HomeContainer';
-import store from '../redux/store';
+import store from '../Redux/store';
 
 it('Test HomeContainer renders correctly', () => {
   const tree = renderer
