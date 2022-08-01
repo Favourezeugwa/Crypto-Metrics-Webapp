@@ -1,12 +1,13 @@
 .detailsContainer {
   color: yellow;
-  background-color: #190738;
+  background-image: url("../../Assets/coin34.bg.jpg");
 }
 
 .imageContainer {
   display: flex;
   justify-content: space-between;
   padding: 50px;
+  background-color: #000826c4;
 }
 
 .indiImg {
@@ -15,31 +16,34 @@
 }
 
 .detailTitle {
-  background-color: #170630;
+  background-color: #000826f3;
   padding: 7px 30px;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #170630;
   padding: 20px 30px;
 }
 
 .info:nth-child(even) {
-  background-color: #170630;
+  background-color: #000826f3;
+}
+
+.info:nth-child(odd) {
+  background-color: #061138ef;
 }
 
 .infoLink {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: #190738;
+  background-color: #061138ef;
   padding: 20px 30px;
 }
 
 .infoLink:nth-child(even) {
-  background-color: #170630;
+  background-color: #000826f3;
 }
 
 .coin-info {

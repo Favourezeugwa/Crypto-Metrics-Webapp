@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.home {
-  background-color: #190738;
-}
-
 .homeList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,12 +15,11 @@
   border: 1px solid #3d3250;
   border-radius: 10px;
   list-style-type: none;
-  background-color: #150530;
+  background-color: #0f0324e1;
   color: rgb(177, 205, 50);
 }
 
 .listItem:hover {
-  background-color: #110625;
   transform: scale(1.01);
   color: yellow;
 }
