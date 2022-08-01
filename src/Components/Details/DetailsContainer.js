@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import { setCoinsReducer } from '../../Redux/Crypto/CryptoSlice';
+
 import './Details.css';
 
 function DetailsContainer() {
+  const dispatch = useDispatch();
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    dispatch(setCoinsReducer(id));
+  }, []);
+
   const cryptos = useSelector((state) => state.crypto);
 
   const filteredCrypto = cryptos.filter((crypto) => crypto.show === true);
@@ -14,15 +26,15 @@ function DetailsContainer() {
         {
          filteredCrypto.map((crypto) => (
            <>
-             <div className="imageContainer">
-               <img src={crypto.img} alt="coin logo" id={crypto.id} className="indiImg" />
+             <div key={uuidv4()} className="imageContainer">
+               <img src={crypto.img} alt="coin logo" id={uuidv4} className="indiImg" />
                <div className="cont">
-                 <h2 key={crypto.id}>
+                 <h2>
                    Coin:
                    {' '}
                    {crypto.name}
                  </h2>
-                 <h2 key={crypto.id}>
+                 <h2>
                    Ranked at:
                    {' '}
                    #
@@ -30,98 +42,98 @@ function DetailsContainer() {
                  </h2>
                </div>
              </div>
-             <h2 className="detailTitle" key={crypto.id}>
+             <h2 className="detailTitle">
                More Information about
                {' '}
                {crypto.name}
              </h2>
              <div className="info">
                <p>Coin Name</p>
-               <p key={crypto.id}>{crypto.name}</p>
+               <p>{crypto.name}</p>
              </div>
              <div className="info">
                <p>Ranking</p>
-               <p key={crypto.id}>
+               <p>
                  No.
                  {crypto.rank}
                </p>
              </div>
              <div className="info">
                <p>Current Price</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.price}
                </p>
              </div>
              <div className="info">
                <p>Symbol</p>
-               <p key={crypto.id}>{crypto.symbol}</p>
+               <p>{crypto.symbol}</p>
              </div>
              <div className="info">
                <p>Market Cap</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.marketCap}
                </p>
              </div>
              <div className="info">
                <p>Available Supply</p>
-               <p key={crypto.id}>{crypto.availableSupply}</p>
+               <p>{crypto.availableSupply}</p>
              </div>
              <div className="info">
                <p>Contract Address</p>
-               <p key={crypto.id}>{crypto.contractAddress}</p>
+               <p>{crypto.contractAddress}</p>
              </div>
              <div className="info">
                <p>Decimals</p>
-               <p key={crypto.id}>{crypto.decimals}</p>
+               <p>{crypto.decimals}</p>
              </div>
              <div className="info">
                <p>Price Btc</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.priceBtc}
                </p>
              </div>
              <div className="info">
                <p>Price Change/1 Day Ago</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.priceChange1d}
                </p>
              </div>
              <div className="info">
                <p>Price Change/Hour</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.priceChange1h}
                </p>
              </div>
              <div className="info">
                <p>Price Change/Week</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.priceChange1w}
                </p>
              </div>
              <div className="info">
                <p>Total Supply</p>
-               <p key={crypto.id}>
+               <p>
                  $
                  {crypto.totalSupply}
                </p>
              </div>
              <div className="info">
                <p>Volume</p>
-               <p key={crypto.id}>{crypto.volume}</p>
+               <p>{crypto.volume}</p>
              </div>
              <div className="infoLink">
                <p>Twitter</p>
-               <li><a href={crypto.twitterUrl} key={crypto.id}>Our Twitter Handle</a></li>
+               <li><a href={crypto.twitterUrl}>Our Twitter Handle</a></li>
              </div>
              <div className="infoLink">
                <p>Website</p>
-               <li><a href={crypto.websiteUrl} key={crypto.id}>Our website URL</a></li>
+               <li><a href={crypto.websiteUrl}>Our website URL</a></li>
              </div>
            </>
          ))

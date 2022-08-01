@@ -1,11 +1,7 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import { FaArrowRight } from 'react-icons/fa';
-import { setCoinsReducer } from '../../Redux/Crypto/CryptoSlice';
 
 const HomeItem = (props) => {
   const { crypto } = props;
@@ -13,13 +9,6 @@ const HomeItem = (props) => {
   const {
     id, name, symbol, price, img, rank,
   } = crypto;
-
-  const dispatch = useDispatch();
-
-  const handleClick = ({ target }) => {
-    const { id } = target;
-    dispatch(setCoinsReducer(id));
-  };
 
   return (
     <li className="listItem">
@@ -29,9 +18,9 @@ const HomeItem = (props) => {
       >
         <div className="home-item-img">
           <Link
-            to="/details"
+            to={`/details/${id}`}
           >
-            <img src={img} alt={name} id={id} onClick={handleClick} />
+            <img src={img} alt={name} />
           </Link>
         </div>
         <div className="home-item-info">
@@ -47,9 +36,9 @@ const HomeItem = (props) => {
           </p>
         </div>
         <Link
-          to="/details"
+          to={`/details/${id}`}
         >
-          <FaArrowRight className="fontIcon" id={id} onClick={handleClick} />
+          <FaArrowRight className="fontIcon" />
         </Link>
       </div>
     </li>

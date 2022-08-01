@@ -43,9 +43,9 @@ export const cryptoSlice = createSlice({
   reducers: {
     setCoinsReducer: (state, action) => state.map((coin) => {
       if (coin.id === action.payload) {
-        return { ...coin, show: !coin.show };
+        return { ...coin, show: true };
       }
-      return coin;
+      return { ...coin, show: false };
     }),
   },
   extraReducers: {
