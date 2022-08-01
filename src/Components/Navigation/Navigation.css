@@ -2,21 +2,27 @@
   0% {
     color: rgb(212, 209, 209);
   }
+
   15% {
     color: rgb(212, 209, 209);
   }
+
   30% {
     color: rgb(34, 34, 151);
   }
+
   45% {
     color: rgb(29, 29, 216);
   }
+
   60% {
     color: yellowgreen;
   }
+
   75% {
     color: rgb(165, 240, 16);
   }
+
   100% {
     color: yellow;
   }
