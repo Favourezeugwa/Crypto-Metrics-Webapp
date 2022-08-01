@@ -8,6 +8,7 @@
 
 ### Screenshots
 
+![](./src/Assets/desktopHome.snip.PNG)
 ![](./src/Assets/mobileHome.snip.PNG)
 ![](./src/Assets/mobiledets.snip.PNG)
 
