@@ -1,3 +1,33 @@
+@keyframes fadeBetween {
+  0% {
+    color: rgb(212, 209, 209);
+  }
+
+  15% {
+    color: rgb(212, 209, 209);
+  }
+
+  30% {
+    color: rgb(34, 34, 151);
+  }
+
+  45% {
+    color: rgb(29, 29, 216);
+  }
+
+  60% {
+    color: yellowgreen;
+  }
+
+  75% {
+    color: rgb(165, 240, 16);
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
 .navLinks {
   display: flex;
   flex-direction: row;
@@ -5,9 +35,10 @@
   align-items: center;
   padding: 20px 10px;
   font-size: 20px;
-  background-color: #170630;
+  background-color: #170630cb;
   color: rgb(212, 209, 209);
   width: 100%;
+  animation: fadeBetween 35s infinite;
 }
 
 .headerList {

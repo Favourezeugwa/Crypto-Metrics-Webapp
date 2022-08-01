@@ -12,7 +12,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route exact path="/" element={<HomeContainer />} />
-          <Route path="/details" element={<DetailsContainer />} />
+          <Route path="/details/:id" element={<DetailsContainer />} />
         </Routes>
       </Router>
     </div>

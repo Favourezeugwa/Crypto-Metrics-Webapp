@@ -8,8 +8,9 @@
 
 ### Screenshots
 
-![](./src/Assets/MobileHome.snip.PNG)
-![](./src/Assets/MobileDetails2.snip.PNG)
+![](./src/Assets/desktopHome.snip.PNG)
+![](./src/Assets/mobileHome.snip.PNG)
+![](./src/Assets/mobiledets.snip.PNG)
 
 ### Live Demo
 
