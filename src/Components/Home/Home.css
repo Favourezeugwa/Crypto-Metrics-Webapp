@@ -48,7 +48,7 @@ img {
 @media only screen and (max-width: 600px) {
   .homeList {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .homeItem {
